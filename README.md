@@ -113,3 +113,7 @@ Skills:
 ## Dashboard 2 - Product & Customer Insights
 
 ![Dashboard 2](Dashboard_2.jpeg)
+
+##  Interactive Tableau Dashboard
+
+[View the Interactive Tableau Dashboard](https://public.tableau.com/views/OlistExecutiveDashboard_17840465623420/OlistE-CommerceSalesOperationsDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
