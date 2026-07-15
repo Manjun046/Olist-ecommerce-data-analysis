@@ -111,5 +111,3 @@ Skills:
 ---
 
 ## Dashboard 2 - Product & Customer Insights
-
-![Dashboard 2](Dashboard_2.jpeg)
