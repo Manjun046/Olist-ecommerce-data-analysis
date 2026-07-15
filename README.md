@@ -99,3 +99,17 @@ Skills:
 - Google BigQuery
 - Tableau
 - Excel
+
+---
+
+# Dashboard Preview
+
+## Dashboard 1 - Executive Overview
+
+![Dashboard 1](Dashboard1.jpeg)
+
+---
+
+## Dashboard 2 - Product & Customer Insights
+
+![Dashboard 2](Dashboard2.jpeg)
