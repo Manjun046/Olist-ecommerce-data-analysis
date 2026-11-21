@@ -100,14 +100,11 @@ Full code: [`olist_late_delivery_hypothesis_test.ipynb`](olist_late_delivery_hyp
 - *Cancellation rate* = canceled orders / all orders.
 - *Late order* = delivery date after the estimated delivery date.
 
-<!-- OPTIONAL: uncomment once the MCP server code is added to the repo.
-
 ## AI-Assisted BigQuery Workflow
 
-A Python FastMCP server connects Claude Desktop to the BigQuery dataset for schema inspection, column profiling and natural-language SQL querying. Guardrails parse every query with sqlglot to enforce read-only SELECT statements and apply a 100 MB BigQuery dry-run limit before execution.
+A Python FastMCP server connects Claude Desktop to the BigQuery dataset for schema inspection, column profiling and natural-language SQL querying. Every query is parsed with sqlglot: only single read-only SELECT statements inside the Olist dataset are allowed, results are capped at 100 rows, and queries scanning more than 100 MiB are blocked by a BigQuery dry run and a hard billing ceiling.
 
-Code: [`mcp_server/`](mcp_server/)
--->
+Details and setup: [`mcp_server/`](mcp_server/README.md)
 
 ---
 
@@ -120,6 +117,7 @@ Dashboard_1_Queries.sql                     SQL for Dashboard 1
 Dashboard_2_Queries.sql                     SQL for Dashboard 2
 Advanced_SQL_Queries_by me.sql              advanced SQL (joins, CTEs, window functions)
 Dashboard_1.jpeg, Dashboard_2.jpeg          dashboard screenshots
+mcp_server/                                 FastMCP server with SQL guardrails (see its README)
 README.md
 ```
 
