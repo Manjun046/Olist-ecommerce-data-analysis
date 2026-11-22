@@ -55,8 +55,9 @@ End-to-end analytics project on the Brazilian Olist marketplace dataset using **
 - **Confounder checks:** late vs on-time compared within each customer state and product category, plus a regression with state and category fixed effects.
 
 **Results**
-- The gap is positive in 26 of 27 states and all 29 product categories with 30+ late orders. The only exception is AP, which has just 2 late orders.
-- The late-weighted gap is 2.00 stars within states and 2.02 within categories, essentially identical to the raw 2.02 gap, so location and category do not explain the effect.
+- The gap is positive in all 21 states and all 29 product categories that have 30+ late orders.
+- The late-weighted gap is about 2.0 stars within states and 2.02 within categories, essentially identical to the raw 2.02 gap, so location and category do not explain the effect.
+- A regression with state and category fixed effects estimates the late-delivery effect at -1.99 stars (95% CI -2.03 to -1.95).
 
 **Limitations**
 - This is observational data, so it shows a strong association rather than proven causation. Unmeasured factors such as seller quality, delivery distance and product condition could contribute.
