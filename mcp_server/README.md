@@ -2,6 +2,28 @@
 
 A single-file [FastMCP](https://gofastmcp.com) server (`server.py`) that lets an AI assistant (Claude Desktop, VS Code Copilot) explore the Olist BigQuery dataset safely: inspect the schema, profile columns, run natural-language-driven SQL, and get Tableau dashboard guidance. Every query goes through guardrails so AI-generated SQL cannot modify data, read outside the dataset, or run up cloud costs.
 
+## Demo
+
+**1. A normal query runs, and the guard adds LIMIT 100 automatically**
+
+<img width="1137" height="852" alt="Prompt 2" src="https://github.com/user-attachments/assets/bacb80b0-eeab-4385-b3ec-648a8485883a" />
+
+**2. Row cap: LIMIT 5000 is rewritten to LIMIT 100**
+
+<img width="985" height="925" alt="Prompt 6" src="https://github.com/user-attachments/assets/64263ef3-bdad-47ab-9665-adeeba62cf84" />
+
+**3. Multi-statement injection is blocked**
+
+<img width="977" height="795" alt="Prompt 4" src="https://github.com/user-attachments/assets/38555c80-e6c7-431c-8f1c-2400a57f5f17" />
+
+**4. A destructive DROP TABLE is blocked**
+
+<img width="1006" height="822" alt="Prompt 3" src="https://github.com/user-attachments/assets/be305571-f334-4cd2-9294-5bd51f2b83dc" />
+
+**5. Access outside the project is blocked**
+
+<img width="1030" height="932" alt="Prompt 5" src="https://github.com/user-attachments/assets/55140aba-84e2-4ff8-92c6-d606cd0af6b4" />
+
 ## Tools
 
 | Tool | What it does |
